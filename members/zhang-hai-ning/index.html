@@ -1,0 +1,124 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style id="nuxt-ui-colors">@layer base {
+  :root {
+  --ui-color-primary-50: var(--color-green-50, oklch(98.2% 0.018 155.826));
+  --ui-color-primary-100: var(--color-green-100, oklch(96.2% 0.044 156.743));
+  --ui-color-primary-200: var(--color-green-200, oklch(92.5% 0.084 155.995));
+  --ui-color-primary-300: var(--color-green-300, oklch(87.1% 0.15 154.449));
+  --ui-color-primary-400: var(--color-green-400, oklch(79.2% 0.209 151.711));
+  --ui-color-primary-500: var(--color-green-500, oklch(72.3% 0.219 149.579));
+  --ui-color-primary-600: var(--color-green-600, oklch(62.7% 0.194 149.214));
+  --ui-color-primary-700: var(--color-green-700, oklch(52.7% 0.154 150.069));
+  --ui-color-primary-800: var(--color-green-800, oklch(44.8% 0.119 151.328));
+  --ui-color-primary-900: var(--color-green-900, oklch(39.3% 0.095 152.535));
+  --ui-color-primary-950: var(--color-green-950, oklch(26.6% 0.065 152.934));
+  --ui-color-secondary-50: var(--color-blue-50, oklch(97% 0.014 254.604));
+  --ui-color-secondary-100: var(--color-blue-100, oklch(93.2% 0.032 255.585));
+  --ui-color-secondary-200: var(--color-blue-200, oklch(88.2% 0.059 254.128));
+  --ui-color-secondary-300: var(--color-blue-300, oklch(80.9% 0.105 251.813));
+  --ui-color-secondary-400: var(--color-blue-400, oklch(70.7% 0.165 254.624));
+  --ui-color-secondary-500: var(--color-blue-500, oklch(62.3% 0.214 259.815));
+  --ui-color-secondary-600: var(--color-blue-600, oklch(54.6% 0.245 262.881));
+  --ui-color-secondary-700: var(--color-blue-700, oklch(48.8% 0.243 264.376));
+  --ui-color-secondary-800: var(--color-blue-800, oklch(42.4% 0.199 265.638));
+  --ui-color-secondary-900: var(--color-blue-900, oklch(37.9% 0.146 265.522));
+  --ui-color-secondary-950: var(--color-blue-950, oklch(28.2% 0.091 267.935));
+  --ui-color-success-50: var(--color-green-50, oklch(98.2% 0.018 155.826));
+  --ui-color-success-100: var(--color-green-100, oklch(96.2% 0.044 156.743));
+  --ui-color-success-200: var(--color-green-200, oklch(92.5% 0.084 155.995));
+  --ui-color-success-300: var(--color-green-300, oklch(87.1% 0.15 154.449));
+  --ui-color-success-400: var(--color-green-400, oklch(79.2% 0.209 151.711));
+  --ui-color-success-500: var(--color-green-500, oklch(72.3% 0.219 149.579));
+  --ui-color-success-600: var(--color-green-600, oklch(62.7% 0.194 149.214));
+  --ui-color-success-700: var(--color-green-700, oklch(52.7% 0.154 150.069));
+  --ui-color-success-800: var(--color-green-800, oklch(44.8% 0.119 151.328));
+  --ui-color-success-900: var(--color-green-900, oklch(39.3% 0.095 152.535));
+  --ui-color-success-950: var(--color-green-950, oklch(26.6% 0.065 152.934));
+  --ui-color-info-50: var(--color-blue-50, oklch(97% 0.014 254.604));
+  --ui-color-info-100: var(--color-blue-100, oklch(93.2% 0.032 255.585));
+  --ui-color-info-200: var(--color-blue-200, oklch(88.2% 0.059 254.128));
+  --ui-color-info-300: var(--color-blue-300, oklch(80.9% 0.105 251.813));
+  --ui-color-info-400: var(--color-blue-400, oklch(70.7% 0.165 254.624));
+  --ui-color-info-500: var(--color-blue-500, oklch(62.3% 0.214 259.815));
+  --ui-color-info-600: var(--color-blue-600, oklch(54.6% 0.245 262.881));
+  --ui-color-info-700: var(--color-blue-700, oklch(48.8% 0.243 264.376));
+  --ui-color-info-800: var(--color-blue-800, oklch(42.4% 0.199 265.638));
+  --ui-color-info-900: var(--color-blue-900, oklch(37.9% 0.146 265.522));
+  --ui-color-info-950: var(--color-blue-950, oklch(28.2% 0.091 267.935));
+  --ui-color-warning-50: var(--color-yellow-50, oklch(98.7% 0.026 102.212));
+  --ui-color-warning-100: var(--color-yellow-100, oklch(97.3% 0.071 103.193));
+  --ui-color-warning-200: var(--color-yellow-200, oklch(94.5% 0.129 101.54));
+  --ui-color-warning-300: var(--color-yellow-300, oklch(90.5% 0.182 98.111));
+  --ui-color-warning-400: var(--color-yellow-400, oklch(85.2% 0.199 91.936));
+  --ui-color-warning-500: var(--color-yellow-500, oklch(79.5% 0.184 86.047));
+  --ui-color-warning-600: var(--color-yellow-600, oklch(68.1% 0.162 75.834));
+  --ui-color-warning-700: var(--color-yellow-700, oklch(55.4% 0.135 66.442));
+  --ui-color-warning-800: var(--color-yellow-800, oklch(47.6% 0.114 61.907));
+  --ui-color-warning-900: var(--color-yellow-900, oklch(42.1% 0.095 57.708));
+  --ui-color-warning-950: var(--color-yellow-950, oklch(28.6% 0.066 53.813));
+  --ui-color-error-50: var(--color-red-50, oklch(97.1% 0.013 17.38));
+  --ui-color-error-100: var(--color-red-100, oklch(93.6% 0.032 17.717));
+  --ui-color-error-200: var(--color-red-200, oklch(88.5% 0.062 18.334));
+  --ui-color-error-300: var(--color-red-300, oklch(80.8% 0.114 19.571));
+  --ui-color-error-400: var(--color-red-400, oklch(70.4% 0.191 22.216));
+  --ui-color-error-500: var(--color-red-500, oklch(63.7% 0.237 25.331));
+  --ui-color-error-600: var(--color-red-600, oklch(57.7% 0.245 27.325));
+  --ui-color-error-700: var(--color-red-700, oklch(50.5% 0.213 27.518));
+  --ui-color-error-800: var(--color-red-800, oklch(44.4% 0.177 26.899));
+  --ui-color-error-900: var(--color-red-900, oklch(39.6% 0.141 25.723));
+  --ui-color-error-950: var(--color-red-950, oklch(25.8% 0.092 26.042));
+  --ui-color-neutral-50: var(--color-slate-50, oklch(98.4% 0.003 247.858));
+  --ui-color-neutral-100: var(--color-slate-100, oklch(96.8% 0.007 247.896));
+  --ui-color-neutral-200: var(--color-slate-200, oklch(92.9% 0.013 255.508));
+  --ui-color-neutral-300: var(--color-slate-300, oklch(86.9% 0.022 252.894));
+  --ui-color-neutral-400: var(--color-slate-400, oklch(70.4% 0.04 256.788));
+  --ui-color-neutral-500: var(--color-slate-500, oklch(55.4% 0.046 257.417));
+  --ui-color-neutral-600: var(--color-slate-600, oklch(44.6% 0.043 257.281));
+  --ui-color-neutral-700: var(--color-slate-700, oklch(37.2% 0.044 257.287));
+  --ui-color-neutral-800: var(--color-slate-800, oklch(27.9% 0.041 260.031));
+  --ui-color-neutral-900: var(--color-slate-900, oklch(20.8% 0.042 265.755));
+  --ui-color-neutral-950: var(--color-slate-950, oklch(12.9% 0.042 264.695));
+  }
+  :root, .light {
+  --ui-primary: var(--ui-color-primary-500);
+  --ui-secondary: var(--ui-color-secondary-500);
+  --ui-success: var(--ui-color-success-500);
+  --ui-info: var(--ui-color-info-500);
+  --ui-warning: var(--ui-color-warning-500);
+  --ui-error: var(--ui-color-error-500);
+  }
+  .dark {
+  --ui-primary: var(--ui-color-primary-400);
+  --ui-secondary: var(--ui-color-secondary-400);
+  --ui-success: var(--ui-color-success-400);
+  --ui-info: var(--ui-color-info-400);
+  --ui-warning: var(--ui-color-warning-400);
+  --ui-error: var(--ui-color-error-400);
+  }
+}</style><script type="importmap">{"imports":{"#entry":"/_nuxt/BCAqhLx8.js"}}</script><style>button.reset-btn[data-v-8ec61247]{background:none;border:none;cursor:pointer;margin:0;padding:0}.menu-hamburger[data-v-8ec61247]{cursor:pointer;display:flex;flex-direction:column;height:20px;justify-content:center;margin:0 14px;width:20px}.menu-hamburger>span[data-v-8ec61247]{background-color:#000;border-radius:10px;height:2px;margin:2px 0;transition:all .15s ease-in-out;width:100%}.menu-hamburger>span.hamburger-1[data-v-8ec61247]{width:50%}.menu-hamburger>span.hamburger-3[data-v-8ec61247]{width:75%}.menu-hamburger.active .hamburger-1[data-v-8ec61247]{transform:rotate(45deg) translate(13px);transform-origin:bottom}.menu-hamburger.active .hamburger-2[data-v-8ec61247]{transform:rotate(-45deg);transform-origin:top}.menu-hamburger.active .hamburger-3[data-v-8ec61247]{transform:translate(2px,-10px) rotate(45deg);transform-origin:bottom;width:50%}</style><link rel="stylesheet" href="/_nuxt/entry.BrNGo7CV.css" crossorigin><link rel="stylesheet" href="/_nuxt/default.C_NnXRgi.css" crossorigin><link rel="preload" as="fetch" crossorigin="anonymous" href="/members/zhang-hai-ning/_payload.json?d70a6e81-ec8b-4e11-a011-fa0ef619a97f"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/BCAqhLx8.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/BKF_gXuE.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/XAWRdS1v.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/BwP16q8n.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/DlAUqK2U.js"><link rel="preload" as="fetch" fetchpriority="low" crossorigin="anonymous" href="/_nuxt/builds/meta/d70a6e81-ec8b-4e11-a011-fa0ef619a97f.json"><script type="module" src="/_nuxt/BCAqhLx8.js" crossorigin></script><script>"use strict";(()=>{const t=window,e=document.documentElement,c=["dark","light"],n=getStorageValue("localStorage","nuxt-color-mode")||"light";let i=n==="system"?u():n;const r=e.getAttribute("data-color-mode-forced");r&&(i=r),l(i),t["__NUXT_COLOR_MODE__"]={preference:n,value:i,getColorScheme:u,addColorScheme:l,removeColorScheme:d};function l(o){const s=""+o+"",a="";e.classList?e.classList.add(s):e.className+=" "+s,a&&e.setAttribute("data-"+a,o)}function d(o){const s=""+o+"",a="";e.classList?e.classList.remove(s):e.className=e.className.replace(new RegExp(s,"g"),""),a&&e.removeAttribute("data-"+a)}function f(o){return t.matchMedia("(prefers-color-scheme"+o+")")}function u(){if(t.matchMedia&&f("").media!=="not all"){for(const o of c)if(f(":"+o).matches)return o}return"light"}})();function getStorageValue(t,e){switch(t){case"localStorage":return window.localStorage.getItem(e);case"sessionStorage":return window.sessionStorage.getItem(e);case"cookie":return getCookie(e);default:return null}}function getCookie(t){const c=("; "+window.document.cookie).split("; "+t+"=");if(c.length===2)return c.pop()?.split(";").shift()}</script></head><body><div id="__nuxt" class="isolate"><div><header class="w-full h-18 flex items-center justify-center px-6 md:px-10 shadow bg-bg lg:bg-transparent lg:backdrop-blur-lg transition-all duration-300 fixed top-0 left-0 z-9999" data-v-8ec61247><div class="flex items-center justify-between w-full max-w-[1100px] h-full" data-v-8ec61247><div data-v-8ec61247><a href="/" class="md:text-lg font-bold" data-v-8ec61247> 软件体验与人机交互实验室 </a></div><nav class="items-center gap-6 text-sm hidden lg:flex" data-v-8ec61247><!--[--><a href="/news" class="hover:text-[#4fadff] py-3" data-v-8ec61247>新闻/NEWS</a><a href="/research" class="hover:text-[#4fadff] py-3" data-v-8ec61247>研究/RESEARCH</a><a href="/publication" class="hover:text-[#4fadff] py-3" data-v-8ec61247>出版/PUBLICATION</a><a href="/members" class="hover:text-[#4fadff] py-3" data-v-8ec61247>成员/MEMBERS</a><a href="/contact" class="hover:text-[#4fadff] py-3" data-v-8ec61247>联系/CONTACT</a><!--]--></nav><button class="reset-btn menu-hamburger hamburger lg:!hidden" data-v-8ec61247><span class="hamburger-1" data-v-8ec61247></span><span class="hamburger-2" data-v-8ec61247></span><span class="hamburger-3" data-v-8ec61247></span></button><nav class="h-0 absolute top-full left-0 w-full bg-bg-dark/20 overflow-hidden transition-all duration-400 lg:h-0" data-v-8ec61247><div class="flex flex-col gap-10 py-10 bg-bg shadow" data-v-8ec61247><!--[--><a href="/news" class="hover:text-[#4fadff] py-3 inline-block w-full text-center" data-v-8ec61247>新闻/NEWS</a><a href="/research" class="hover:text-[#4fadff] py-3 inline-block w-full text-center" data-v-8ec61247>研究/RESEARCH</a><a href="/publication" class="hover:text-[#4fadff] py-3 inline-block w-full text-center" data-v-8ec61247>出版/PUBLICATION</a><a href="/members" class="hover:text-[#4fadff] py-3 inline-block w-full text-center" data-v-8ec61247>成员/MEMBERS</a><a href="/contact" class="hover:text-[#4fadff] py-3 inline-block w-full text-center" data-v-8ec61247>联系/CONTACT</a><!--]--></div></nav></div></header><div class="pt-20 px-4 md:px-10"><main class="minH max-w-[1100px] mx-auto relative"><!--[--><div><div class="px-4 md:px-11 pt-10 md:pt-20 pb-0 flex flex-col gap-8"><div class="grid grid-cols-[6fr_4fr] md:grid-cols-[5fr_5fr] lg:grid-cols-[3fr_7fr] gap-4 md:gap-10 items-end"><img class="w-full select-none" src="/assets/img/avatar/zhang_hai_ning.jpg" alt="张海宁" draggable="false" loading="lazy"><div class="mb-5 flex flex-col gap-1"><h1 class="font-bold text-xl">张海宁</h1><h2 style="display:none;" class="font-bold text-md">选填 英文名字</h2><h3 class="text-sm">讲席教授</h3></div></div><div style=""><h1 class="text-2xl mb-5">Contact 联系方式</h1><div class="flex flex-col gap-2"><div class="text-sm" style="display:none;"><span>Web</span><span>: </span><a target="_blank"></a></div><div class="text-sm" style="display:none;"><span>Google Scholar</span><span>: </span><a target="_blank"></a></div><div class="text-sm" style="display:none;"><span>Github</span><span>: </span><a target="_blank"></a></div><div class="text-sm" style=""><span>Email</span><span>: </span><a href="mailto:zhanghaining@nankai.edu.cn" target="_blank">zhanghaining@nankai.edu.cn</a></div></div></div></div><div class="markdown-body !text-sm md:!text-base"><article><h2 id="%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B" tabindex="-1"><a class="header-anchor" href="#%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B">#</a> 个人简介</h2>
+<p>南开大学讲席教授、博士生导师，国家级高层次人才，天津市软件体验与人机交互重点实验室主任。拥有国际知名高科技公司二十七年的技术和产品研发经验，包括苹果、黑莓、思科、北电网络和摩托罗拉。曾任苹果公司美国软件开发总监及大中华区工程研究院院长，申请并获得四十余项美国发明专利。曾管理上百人的美国软件开发团队，完成了十余个iPhone、iPad和Apple Watch的无线通信平台软件开发项目。曾领导上千人的大中华区产品研发团队，完成了苹果产品在中国的研发任务。联合创建清华大学苹果公司智能移动技术联合研究中心并任管委会主任，联合创建浙江大学苹果公司科技创新中心，曾担任清华伯克利深圳学院（TBSI）海外顾问。</p>
+<h2 id="%E6%95%99%E8%82%B2%E7%BB%8F%E5%8E%86" tabindex="-1"><a class="header-anchor" href="#%E6%95%99%E8%82%B2%E7%BB%8F%E5%8E%86">#</a> <strong>教育经历</strong></h2>
+<p>1987-1992 清华大学计算机科学与技术系，工学学士</p>
+<p>1992-1995 华北计算技术研究所，工学硕士</p>
+<h2 id="%E5%B7%A5%E4%BD%9C%E7%BB%8F%E5%8E%86" tabindex="-1"><a class="header-anchor" href="#%E5%B7%A5%E4%BD%9C%E7%BB%8F%E5%8E%86">#</a> <strong>工作经历</strong></h2>
+<p>1995-1998 Motorola Beijing Software Center，Senior Software Engineer</p>
+<p>1998-1999 Nortel Networks（Canada）Software Engineer</p>
+<p>1999-2000 Cisco Systems（Canada）Software Engineer</p>
+<p>2001-2006 BlackBerry（Canada &amp; USA）Senior Software Engineer &amp; Technical Lead</p>
+<p>2006-2008 Palm（USA）Senior Software Development Manager</p>
+<p>2008-2022 Apple（USA）Software Development Director, Head of Greater China R&amp;D</p>
+<h2 id="%E9%83%A8%E5%88%86%E6%8E%88%E6%9D%83%E5%8F%91%E6%98%8E%E4%B8%93%E5%88%A9%EF%BC%88%E7%BE%8E%E5%9B%BD%EF%BC%89" tabindex="-1"><a class="header-anchor" href="#%E9%83%A8%E5%88%86%E6%8E%88%E6%9D%83%E5%8F%91%E6%98%8E%E4%B8%93%E5%88%A9%EF%BC%88%E7%BE%8E%E5%9B%BD%EF%BC%89">#</a> 部分授权发明专利（美国）</h2>
+<p>US10572390 Methods and Apparatus for loading firmware on demand</p>
+<p>US10191852 Methods and apparatus for locking at least a portion of a shared memory resource</p>
+<p>US9971397 Methods and apparatus for managing power with an inter-processor communication link between independently operable processors</p>
+<p>US9693238 Dynamic antenna tuning for multi-band multi-carrier wireless systems</p>
+<p>US9621245 Facilitating switching between transmitting antennas in portable devices</p>
+<p>US8700819 Host device suspending communication link to client device based on client device notification</p>
+<p>US8589667 Booting and configuring a subsystem securely from non-local storage</p>
+<p>US8504120 Techniques for controlling a radio processor in a mobile computing device</p>
+<p>US8121582 Apparatus and method of wireless instant messaging</p>
+<p>US7518994 System and method of handling IP layer mobility in a wireless network</p>
+<h2 id="%E8%AE%B2%E6%8E%88%E8%AF%BE%E7%A8%8B" tabindex="-1"><a class="header-anchor" href="#%E8%AE%B2%E6%8E%88%E8%AF%BE%E7%A8%8B">#</a> <strong>讲授课程</strong></h2>
+<p>软件工程（英文，本科）、软件过程管理（研究生）、面向对象分析与设计（二学位）、Introduction to Leading Software Technology (留学生）。</p>
+<h2 id="%E7%A4%BE%E4%BC%9A%E5%85%BC%E8%81%8C" tabindex="-1"><a class="header-anchor" href="#%E7%A4%BE%E4%BC%9A%E5%85%BC%E8%81%8C">#</a> <strong>社会兼职</strong></h2>
+<p>CCF校企合作委员会执行委员、CCF CTO俱乐部成员</p>
+</article></div></div><!--]--></main></div><footer class="py-10"><div class="max-w-[1500px] grid grid-rows-[auto_auto_1fr] md:grid-cols-[1fr_200px_1fr] md:grid-rows-subgrid mx-auto gap-5"><div class="flex flex-col items-center justify-center py-4 md:py-0"><div><img class="w-[140px]" src="/assets/img/footer/nku.png" alt="nku" draggable="false"></div><div>软件体验与人机交互实验室</div></div><nav class="flex flex-col justify-center items-center text-sm md:text-base"><!--[--><a href="/news" class="hover:text-[#4fadff] py-3 inline-block">新闻/NEWS</a><a href="/research" class="hover:text-[#4fadff] py-3 inline-block">研究/RESEARCH</a><a href="/publication" class="hover:text-[#4fadff] py-3 inline-block">出版/PUBLICATION</a><a href="/members" class="hover:text-[#4fadff] py-3 inline-block">成员/MEMBERS</a><a href="/contact" class="hover:text-[#4fadff] py-3 inline-block">联系/CONTACT</a><!--]--></nav><div class="flex flex-col items-center justify-center px-4 md:px-0"><div class="flex flex-col gap-3"><h1 class="text-xl">Contact us</h1><div><!--[--><div class="flex flex-col gap-0.5 text-sm"><span>津南校区地址：天津市津南区海河教育园同砚路38号</span><span>邮编：300350</span></div><div class="flex flex-col gap-0.5 text-sm"><span>泰达校区：天津经济开发区宏达街23号</span><span>邮编：300457</span></div><!--]--></div><hr class="text-gray-400"><h1 class="text-xl">Follow us</h1><div><img class="w-[140px]" src="/assets/img/footer/gzh.jpg" alt="gzh" draggable="false"></div></div></div></div></footer></div></div><div id="teleports"></div><script type="application/json" data-nuxt-data="nuxt-app" data-ssr="true" id="__NUXT_DATA__" data-src="/members/zhang-hai-ning/_payload.json?d70a6e81-ec8b-4e11-a011-fa0ef619a97f">[{"state":1,"once":7,"_errors":8,"serverRendered":5,"path":10,"prerenderedAt":11},["Reactive",2],{"$scolor-mode":3},{"preference":4,"value":4,"unknown":5,"forced":6},"light",true,false,["Set"],["ShallowReactive",9],{"$fPqVAgN0jbm7si4P3P3EyUsJ7voRMNBOSvCghsxUXsmM":-1,"$fP5wc4_0PqSqTnJtJwhZLriCVmOwK-U1s7-UffwYtxaE":-1,"$fezdxE79zgbyea_LoSHD31d6lbZuFrJLsz_mv1SLvV_Y":-1},"/members/zhang-hai-ning",1768286791370]</script><script>window.__NUXT__={};window.__NUXT__.config={public:{},app:{baseURL:"/",buildId:"d70a6e81-ec8b-4e11-a011-fa0ef619a97f",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script></body></html>
