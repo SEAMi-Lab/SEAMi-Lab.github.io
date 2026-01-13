@@ -1,0 +1,1 @@
+function c(t){const i=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],n=t["main-title"]==="zh-CN"?t["title-zh-CN"]:t["title-en-US"],l=t["main-title"]==="zh-CN"?t["title-en-US"]:t["title-zh-CN"],e=new Date(t.date),o=i[e.getMonth()]+" "+e.getDate()+", "+e.getFullYear();return{mainTitle:n||l,subTitle:n?l:null,date:o}}export{c as f};
